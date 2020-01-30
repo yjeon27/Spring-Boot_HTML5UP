@@ -10,16 +10,22 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/devicon.css" />
+    <script type="text/javascript" src='js/script.js'></script>
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
 </head>
 <body class="is-preload">
 
 <!-- Header -->
 <header id="header">
-    <div class="inner">
-        <a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-        <h1><strong>Young Wan Jeon</strong><br />
-            B.E.Sc  Computer Engineering - Software Systems<br /></h1>
+    <div class="headSel">
+        <div class="inner">
+            <a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+            <h1><strong>Young Wan Jeon</strong><br />
+                B.E.Sc  Computer Engineering - Software Systems<br /></h1>
+        </div>
     </div>
 </header>
 
@@ -30,12 +36,18 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
     <section class="banner style1 onload-image-fade-in onload-content-fade-right">
         <section id="one">
             <header class="major">
-                <h2>Ipsum lorem dolor aliquam ante commodo<br />
-                    magna sed accumsan arcu neque.</h2>
+                <h2>Hey, what's up?<br/></h2>
             </header>
-            <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
+            <p> This is my first attempt at building a website. Most of the groundwork has already done
+                from <a href="http://html5up.net">HTML5 UP</a>. I combined certain elements from a couple templates
+                of my liking to decorate the website.<hr>
+            The back-end was built using spring-boot because I wanted exposure to the technology and I'm hoping
+            to use more of the Spring framework's full potential as I expand on this website.
+            I have a lot of exciting projects coming up, so make sure to take a look below!<br/><br/>
+
+            Thanks for dropping by :)</p>
             <ul class="actions">
-                <li><a href="#two" class="button big wide smooth-scroll-middle">Get Started</a></li>
+                <li><a href="#two" class="button big wide smooth-scroll-middle">View Projects</a></li>
             </ul>
         </section>
     </section>
@@ -102,13 +114,11 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
     <section class="wrapper style1 align-center" id="two">
         <div class="inner">
-            <h2>Ipsum sed consequat</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
-            <div class="items style1 medium onscroll-fade-in">
-                <section>
-<%--                    <span class="icon style2 major fa-gem"></span>--%>
+            <h2>Projects I've Worked On...</h2>
+            <p>The following is a list of projects I have worked/been working on. If you are interestd, click on one to take a look at the related github page!</p>
+            <div class="items style1 medium onscroll-fade-in" id="projectTable">
+                <!--<section>
                     <span class="icon style2 major"></span>
-<%--                    <img src = "images/git/JS.jpg">--%>
                     <h3>Project 1</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
                 </section>
@@ -166,7 +176,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                     <span class="icon solid style2 major fa-leaf"></span>
                     <h3>Risus</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-                </section>
+                </section>-->
             </div>
         </div>
         <ul class="actions">
@@ -199,7 +209,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
     <!-- Three -->
     <section id="three">
         <h2>Get In Touch</h2>
-        <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+        <p>Feel free to contact me via email if you have any questions about me or this website! I'd be happy to answer.</p>
         <div class="row">
             <div class="col-8 col-12-small">
                 <form method="post" action="#">
@@ -220,11 +230,11 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                         1234 Somewhere Rd.<br />
                         Nashville, TN 00000<br />
                         United States
-                    </li>!-->
+                    </li>!
                     <li>
                         <h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
                         519-694-8851
-                    </li>
+                    </li>-->
                     <li>
                         <h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
                         <a href="#">ywjeon1314@gmail.com</a>
@@ -558,9 +568,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 <footer id="footer">
     <div class="inner">
         <ul class="icons">
-            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-            <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+            <!--<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>-->
+            <li><a href="https://github.com/yjeon27" class="icon brands fa-github"><span class="label">Github</span></a></li>
+            <!--<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>-->
             <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
         </ul>
         <ul class="copyright">

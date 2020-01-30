@@ -2149,6 +2149,12 @@ input, select, textarea {
 
 		.image.avatar {
 			border-radius: 100%;
+			pointer-events: none;
+			-moz-user-select: -moz-none;
+			-khtml-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
 		}
 
 			.image.avatar:before {
@@ -6046,7 +6052,15 @@ body.is-preload .items.onload-fade-in > * > .inner {
 		}
 
 /* Header */
-
+	.headSel {
+		pointer-events: none;
+		-moz-user-select: -moz-none;
+		-khtml-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	
 	#header {
 		display: -moz-flex;
 		display: -webkit-flex;
