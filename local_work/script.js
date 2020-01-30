@@ -44,8 +44,11 @@ window.onload=function(){
                     icon.setAttribute("class", "devicon-github-plain colored");
             }
 
-
-            let summary = readMe.substr(readMe.indexOf("##")+3, readMe.indexOf("-"));
+            // debugger;
+            let start = readMe.indexOf("##")+3;
+            let end = readMe.indexOf("*");
+            console.log(start+"   "+end);
+            let summary = readMe.substring(start, end);
             if (summary === ""){
                 summary = readMe.substr(readMe.indexOf("##")+3);
                 console.log('REPLACED for '+splitTitle);

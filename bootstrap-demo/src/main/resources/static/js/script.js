@@ -25,7 +25,7 @@ window.onload=function(){
 
             let splitTitle = resultRepos[i].name.replace(/_/g, " ");
             const lang = resultRepos[i].language;
-            let icon = document.createElement("i"); 
+            let icon = document.createElement("i");
 
             switch(lang){
                 case "C++":
@@ -44,15 +44,18 @@ window.onload=function(){
                     icon.setAttribute("class", "devicon-github-plain colored");
             }
 
-
-            let summary = readMe.substr(readMe.indexOf("##")+3, readMe.indexOf("-"));
+            // debugger;
+            let start = readMe.indexOf("##")+3;
+            let end = readMe.indexOf("*");
+            console.log(start+"   "+end);
+            let summary = readMe.substring(start, end);
             if (summary === ""){
                 summary = readMe.substr(readMe.indexOf("##")+3);
                 console.log('REPLACED for '+splitTitle);
             }
-    
+
             // debugger;
-    
+
             const section = document.createElement('section');
             const span = document.createElement('span');
             span.setAttribute('class', 'icon style2 major');
@@ -78,10 +81,10 @@ window.onload=function(){
             section.appendChild(h3);
             section.appendChild(p);
 
-    
+
             projectTable.appendChild(section);
         }
-        
+
     }
 
 }
